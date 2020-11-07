@@ -10,14 +10,16 @@ namespace SalesWebMvc.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index() //IActionResult -> Interface tipo generico para retorna de varias ações
         {
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Salles MVC WEB App from C# Course";
+            ViewData["Nome"] = "Victor Vaz";
+            ViewData["email"] = "victorvaz001@gmail.com";
 
             return View();
         }
